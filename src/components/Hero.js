@@ -4,13 +4,13 @@ import { FiSearch } from 'react-icons/fi';
 
 const Hero = () => {
   return (
-    <div className='relative  h-[13rem] mx-5 mt-6 rounded-[0.3rem]'>
+    <div className='relative  h-[13rem] sm:h-[16rem] rounded-[0.3rem]'>
     {/* Background Image */}
       <div className='absolute flex w-full'>
         <img 
           src={hero} 
           alt='hero'
-          className='object-cover w-full rounded-[0.3rem] h-[13rem] z-10'
+          className='object-cover w-full rounded-[0.3rem] h-[13rem] sm:h-[16rem] z-10'
         />
       </div>
       {/* Overlay */}
