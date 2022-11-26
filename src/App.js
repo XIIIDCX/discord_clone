@@ -1,12 +1,11 @@
-import Groups from './components/Groups';
-import Discover from './components/Discover';
-import MainContent from './components/MainContent';
-import logo from './logo.svg';
-import './App.css';
+import Groups from "./components/Groups";
+import Discover from "./components/Discover";
+import MainContent from "./components/MainContent";
+import "./App.css";
 
 function App() {
   return (
-    <div className="flex bg-[#393943] h-screen">
+    <div className="flex bg-[#393943]">
       {/* Friends + Groups */}
       <Groups />
       {/* Discover */}
@@ -14,7 +13,7 @@ function App() {
       {/* Main Content */}
       <MainContent />
       {/* Hero */}
-      {/* Featured */}     
+      {/* Featured */}
     </div>
   );
 }

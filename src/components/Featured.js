@@ -2,6 +2,10 @@ import React from "react";
 import picture2 from "../components/pictures/lmfao.jpg";
 import picture1 from "../components/pictures/background2.jpg";
 import Card from "./Card";
+import bg01 from "../components/pictures/bg01.jpg";
+import bg02 from "../components/pictures/bg02.jpg";
+import bg03 from "../components/pictures/bg03.jpg";
+import bg04 from "../components/pictures/bg04.jpg";
 
 const Featured = () => {
   const cards = [
@@ -14,7 +18,7 @@ const Featured = () => {
       size: <p>85,532 Online &#x2022; 232,061 Members</p>,
     },
     {
-      bg: picture1,
+      bg: bg01,
       profile: picture2,
       title: "Fire Emblem Heroes",
       description:
@@ -22,7 +26,7 @@ const Featured = () => {
       size: <p>85,532 Online &#x2022; 232,061 Members</p>,
     },
     {
-      bg: picture1,
+      bg: bg02,
       profile: picture2,
       title: "Fire Emblem Heroes",
       description:
@@ -30,7 +34,15 @@ const Featured = () => {
       size: <p>85,532 Online &#x2022; 232,061 Members</p>,
     },
     {
-      bg: picture1,
+      bg: bg03,
+      profile: picture2,
+      title: "Fire Emblem Heroes",
+      description:
+        "We are a community for Fire Emblem Heroes. Enjoy lore, get game help and FE fandom",
+      size: <p>85,532 Online &#x2022; 232,061 Members</p>,
+    },
+    {
+      bg: bg04,
       profile: picture2,
       title: "Fire Emblem Heroes",
       description:
@@ -50,7 +62,7 @@ const Featured = () => {
       </div>
 
       {/* Cards */}
-      <div className="grid grid-cols-1 gap-y-8 mb-4 xs:grid-cols-2     xs:gap-x-2 lmd:grid-cols-3 xl:grid-cols-4 sm:gap-x-4">
+      <div className="grid gap-y-8 mb-4 grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 xs:gap-x-2  sm:gap-x-4">
         {cards.map((card) => (
           <Card
             bg={card.bg}
@@ -58,6 +70,7 @@ const Featured = () => {
             title={card.title}
             description={card.description}
             size={card.size}
+            key={card.description}
           />
         ))}
       </div>
