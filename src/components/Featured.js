@@ -1,11 +1,11 @@
-import React from "react";
-import picture2 from "../components/pictures/lmfao.jpg";
+import { Link } from "react-router-dom";
 import picture1 from "../components/pictures/background2.jpg";
-import Card from "./Card";
+import picture2 from "../components/pictures/lmfao.jpg";
 import bg01 from "../components/pictures/bg01.jpg";
 import bg02 from "../components/pictures/bg02.jpg";
 import bg03 from "../components/pictures/bg03.jpg";
 import bg04 from "../components/pictures/bg04.jpg";
+import Card from "./Card";
 
 const Featured = () => {
   const cards = [
@@ -64,14 +64,16 @@ const Featured = () => {
       {/* Cards */}
       <div className="grid gap-y-8 mb-4 grid-cols-1 xs:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 xs:gap-x-2  sm:gap-x-4">
         {cards.map((card) => (
-          <Card
-            bg={card.bg}
-            profile={card.profile}
-            title={card.title}
-            description={card.description}
-            size={card.size}
-            key={card.description}
-          />
+          <Link to="/card">
+            <Card
+              bg={card.bg}
+              profile={card.profile}
+              title={card.title}
+              description={card.description}
+              size={card.size}
+              key={card.description}
+            />
+          </Link>
         ))}
       </div>
     </div>

@@ -1,5 +1,3 @@
-import React from "react";
-
 const Card = ({ size, description, title, profile, bg }) => {
   return (
     <div className="w-full">
@@ -25,10 +23,14 @@ const Card = ({ size, description, title, profile, bg }) => {
         <p className="pt-9 text-white font-bold text-[17px]">{title}</p>
 
         {/* Description */}
-        <p className="text-gray-400 font-medium text-[15px] pt-1">{description}</p>
+        <p className="text-gray-400 font-medium text-[15px] pt-1">
+          {description}
+        </p>
 
         {/* Size */}
-        <p className="text-gray-400 font-medium text-[13px] pt-3 pb-4">{size}</p>
+        <p className="text-gray-400 font-medium text-[13px] pt-3 pb-4">
+          {size}
+        </p>
       </div>
     </div>
   );

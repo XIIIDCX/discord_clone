@@ -1,11 +1,11 @@
-import React from "react";
 import img1 from "../components/pictures/img1.png";
 import img2 from "../components/pictures/img2.png";
 import img3 from "../components/pictures/img3.png";
 import img4 from "../components/pictures/img4.png";
 import dc from "../components/pictures/dc.png";
-import { FiPlus } from "react-icons/fi";
 import { AiFillCompass } from "react-icons/ai";
+import { FiPlus } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const Groups = () => {
   const groups = [img1, img2, img3, img4];
@@ -15,13 +15,16 @@ const Groups = () => {
       {/* Groups */}
       <div className="flex flex-col items-center w-full space-y-4">
         {/* Discord */}
-        <div className="bg-[#36393f] p-1 rounded-[1.3rem] cursor-pointer">
-          <img
-            src={dc}
-            alt="discord"
-            className="w-12 h-12 rounded-full text-white brightness-75"
-          />
-        </div>
+        <Link to="/">
+          <div className="bg-[#36393f] p-1 rounded-[1.3rem] cursor-pointer">
+            <img
+              src={dc}
+              alt="discord"
+              className="w-12 h-12 rounded-full text-white brightness-75"
+            />
+          </div>
+        </Link>
+
         {/* Compass */}
         <div className="bg-[#7289dc] p-3 rounded-[1.3rem] cursor-pointer">
           <AiFillCompass

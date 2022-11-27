@@ -1,18 +1,17 @@
-import React from "react";
-import { AiFillCompass } from "react-icons/ai";
+import { FaGraduationCap, FaHeadphones } from "react-icons/fa";
 import { GiConsoleController } from "react-icons/gi";
+import lmfao from "../components/pictures/lmfao.jpg";
+import { MdKeyboardVoice } from "react-icons/md";
+import { AiFillCompass } from "react-icons/ai";
+import { IoMdSettings } from "react-icons/io";
+import { FiMonitor } from "react-icons/fi";
+import { TbAtom } from "react-icons/tb";
+import Topic from "./Topic";
 import {
   BsMusicNoteBeamed,
   BsFillPlayCircleFill,
   BsFillEmojiSmileFill,
 } from "react-icons/bs";
-import { FaGraduationCap, FaHeadphones } from "react-icons/fa";
-import { TbAtom } from "react-icons/tb";
-import { FiMonitor } from "react-icons/fi";
-import { MdKeyboardVoice } from "react-icons/md";
-import { IoMdSettings } from "react-icons/io";
-import Topic from "./Topic";
-import lmfao from "../components/pictures/lmfao.jpg";
 
 const Discover = () => {
   const topics = [
@@ -40,11 +39,7 @@ const Discover = () => {
       {/* Profile */}
       <div className="bg-[#292b2f] h-[3rem] flex text-white/80 items-center px-2 justify-between">
         <div className="flex items-center">
-          <img
-            src={lmfao}
-            alt="avatar"
-            className="w-8 h-8 rounded-full"
-          ></img>
+          <img src={lmfao} alt="avatar" className="w-8 h-8 rounded-full"></img>
           <div className="pl-2">
             <p className="text-[13px] font-bold">XIIIDCX</p>
             <p className="text-[11px] text-gray-400">#13669</p>
